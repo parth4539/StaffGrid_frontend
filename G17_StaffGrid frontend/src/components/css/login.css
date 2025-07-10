@@ -1,0 +1,269 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #E4F0F4;
+}
+
+
+.login-container { 
+  background-color: #243642; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+.content-wrapper{
+  padding:20px;
+  height: 100%; 
+  background-color: #E2F1E7;
+  border-radius: 50% !important;
+  
+}
+
+.login-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  width: 80%;  
+  background-color:#E2F1E7;
+  padding: 50px;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+ 
+.left-side {
+  background-color: #E2F1E7;
+  border-radius: 15px;
+ 
+
+}
+
+.right-side {
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.login {
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.staff-grid {  
+  text-align: center; 
+  color: #243642;  
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-size: 2em;  
+  font-weight: 400;
+  font-style: normal; 
+  padding-bottom: 100px;
+  
+}
+.logo-image {  
+    width: 400px!important;  
+    height: 250px!important;    
+}
+ 
+
+.input-box {
+  position: relative;
+  margin: 15px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.input-box input {
+  width: 100% !important;
+  padding: 15px 15px 15px 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px !important;
+  font-size: 16px !important;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-icon,
+.show-password {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-icon {
+  left: 15px;
+}
+
+.show-password {
+  right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-code {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+  background-color: #E4F0F4;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: line-through;
+}
+
+.captcha-refresh {
+  cursor: pointer;
+  font-size: 20px;
+  color: #6cb7f3;
+  margin-left: 20px;
+}
+
+.captcha-input input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%; 
+  padding: 12px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #387478;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.forgot-password-btn{ 
+  text-decoration: none;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
+.login-btn:hover {
+  background-color: #387478;
+  transform: scale(1.05);
+}
+
+.forgot-password {
+  color: gray;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width:70%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .input-box input,
+  .captcha-input input {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    width: 90%;
+  } 
+}
+@media (max-width: 650px) {
+  .login-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 20px;
+  }
+  .left-side {
+    width: 100%; 
+  }
+
+
+  .input-box input,
+  .captcha-input input {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    width: 90%;
+  }
+  .logo-image {  
+    width: 250px!important;  
+    height: 200px!important;   
+    border-radius: 10px;   
+}
+} 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ 
+.error-message {
+  color: red;
+  font-size: 14px; 
+  text-align: center;
+  padding:10px;
+}
+ 
+.Toastify__close-button {
+  width: 20px;
+  height: 20px; 
+  font-size: 14px; 
+  padding: 0; 
+  margin: 0;
+}
+ 
+.Toastify__close-button:hover {
+  background-color: transparent; 
+}

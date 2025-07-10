@@ -1,0 +1,37 @@
+/* button, .MuiButtonBase-root {
+    color: #fff;
+    background-color: #3498db;
+    margin: 5px;
+  }
+  
+  button:hover, .MuiButtonBase-root:hover {
+    background-color: #2980b9;
+  }
+   */
+
+   *{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  }
+  
+  *::-webkit-scrollbar {
+      width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+  
+  
+
+  

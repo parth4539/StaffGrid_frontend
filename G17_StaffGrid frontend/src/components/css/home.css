@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  /* height: 100%; */
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.60)),
+    url('https://www.scienceofpeople.com/wp-content/uploads/2023/08/949766_BodyLanguage_D1_012121.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;  
+
+}
+
+.welcome-content {
+  text-align: center;
+  color: #1f2937;
+}
+
+.welcome-text {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typed 3s steps(60, end) infinite;
+}
+
+.welcome-text::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background-color: #1f2937;
+  margin-left: 5px;
+}
+
+.employee-name-large {
+  font-size: 1.875rem;
+  color: #000000;
+  font-weight: 500;
+  animation: bounceIn 0.7s ease-out 0.8s both;
+}
+
+.welcome-subtitle {
+  color: #000308;
+  margin-top: 16px;
+  animation: fadeIn 0.7s ease-out 0.8s both;
+}
+ 
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+}
+ 
+@keyframes typed {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
